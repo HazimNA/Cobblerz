@@ -230,7 +230,7 @@ header {
 }
 
 .minimized {
-    height: 30vh; /* Shrink the height of the chatbox when minimized */
+    height: 5vh; /* Shrink the height of the chatbox when minimized */
     width: 20vh;
 }
 
