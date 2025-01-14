@@ -83,15 +83,16 @@
 
     <script src="DragChatBox.js"></script>
 
-    <div class="chatbox">
-        <div class="chatboxheader">
-            Chat Now
+    <div class="chatbox" id="chatbox">
+        <div class="chatbox-header" id="chatboxHeader">
+            Chat 
+            <button id="minimizeBtn" class="minimize-btn">-</button> <!-- Minimize Button -->
         </div>
-        <div class="chatbox-body">
-            <p>Welcome! Type your message below.</p>
+        <div class="chatbox-body" id="chatboxBody">
+            <p>Welcome to the chat!</p>
         </div>
         <div class="chatbox-footer">
-            <input type="text" placeholder="Type a message..." />
+            <input type="text" placeholder="Type a message...">
             <button>Send</button>
         </div>
     </div>
