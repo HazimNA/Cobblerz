@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobblerz - Customer Testimonials</title>
+    <link rel="stylesheet" href="TestiStyle.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a href="https://wa.me/0135737067" target="_blank">
+                <img src="Logo Whatsapp.png" class="Whatsapp" alt="WhatsApp" >
+            </a>
+            <a href="https://t.me/@pojeyyyyy" target="_blank">
+                <img src="Logo telegram.png" class="telegram" alt="Telegram">
+            </a>
+            <div class="phone-container"> 
+                <a href="telno">013-5737067</a> 
+            </div>
+        </div>
+    
+        <nav class="navbar">
+            <div class="logo-container"> 
+                <img src="logo.png" class="logo" alt="Cobblerz Logo"> 
+                <a href="index.html" class="logo-text">Cobblerz</a> 
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu"> 
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="AboutUs.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="Serv.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="testimony.html" class="nav-link">Testimony</a></li>
+                <li class="nav-item"><a href="location.html" class="nav-link">Location</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <script src="hamburgerMenu.js"></script>
+            
+        </nav>
+    </header>
+
+    <div class="Container1">
+        <h1>Testimony</h1>
+        <h2>Sharing Stories, Building Trust.</h2>
+    </div>
+
+    <div class="testimonial-container">
+        <div class="testimonial-slider" id="slider">
+            <div class="testimonial">
+                <img src="reviiew1.jpg" alt="Customer 1">
+                <h3>Abu Yussof</h3>
+                <p>"Wow, my favorite pair have become to perfection! I love it so much"</p>
+            </div>
+            <div class="testimonial">
+                <img src="review2.jpg" alt="Customer 2">
+                <h3>Kamal Adli</h3>
+                <p>"Fantastic and not so much time consume. Best service ever!"</p>
+            </div>
+            <div class="testimonial">
+                <img src="review3.jpg" alt="Customer 3">
+                <h3>Xing Hai</h3>
+                <p>"Amazing work on my shoes. Cobblerz exceeded my expectations!"</p>
+            </div>
+            <div class="testimonial">
+                <img src="review4.jpg" alt="Customer 3">
+                <h3>Muhammad Fuad</h3>
+                <p>"After getting my boots repaired and polished at Cobblez, they feel like they’re ready for a brand-new season. Excellent quality and friendly service every time!"</p>
+            </div>
+            <div class="testimonial">
+                <img src="review5.jpg" alt="Customer 3">
+                <h3>Ahmad Suhaimi</h3>
+                <p>"Cobblez does an amazing job with shoe cleaning and whitening, My sneakers have never been this bright. They always deliver fast, professional service!"</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="prevSlide()">Prev</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slider = document.getElementById('slider');
+            const totalSlides = slider.children.length;
+            if (index >= totalSlides) currentIndex = 0;
+            else if (index < 0) currentIndex = totalSlides - 1;
+            else currentIndex = index;
+
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+    </script>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>Our Company</h4>
+            <p>Cobblerz, a 2021 IIUM startup, offers comprehensive shoe care services including cleaning, repair, and customization. To reach a wider audience beyond the IIUM community, we propose creating a user-friendly website to showcase these services and drive online sales.</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>013-5737067</p>
+            <p>
+                Blog G, Mahallah Ali, IIUM,<br>
+                53100 Kuala Lumpur, Selangor, Malaysia
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Operating Hours</h4>
+            <p>
+                Mon - Fri: 8am - 8pm<br>
+                Saturday: 9am - 7pm<br>
+                Sunday: 9am - 8pm<br>
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://wa.me/0135737067" target="_blank"><img src="Logo Whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://t.me/@pojeyyyyy" target="_blank"><img src="Logo telegram.png" alt="Telegram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="footer-bottom">
+    <p>&copy; 2024 Cobblerz. All Rights Reserved.</p>
+</div>
+
+</html>

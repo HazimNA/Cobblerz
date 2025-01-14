@@ -1,0 +1,14 @@
+{
+    "company": "Cobblerz",
+    "services": ["Cleaning", "Repairing", "Whitening", "Polishing"],
+    "contact": {
+        "phone": "013-5737067",
+        "email": "info@cobblerz.com",
+        "address": "Blog G, Mahallah Ali, IIUM, 53100 Kuala Lumpur, Malaysia"
+    },
+    "hours": {
+        "Monday-Friday": "8am-8pm",
+        "Saturday": "9am-7pm",
+        "Sunday": "9am-8pm"
+    }
+}
